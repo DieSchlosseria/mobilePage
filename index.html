@@ -16,6 +16,27 @@
   </a>
 </head>
 <header>
+
+
+  <script>
+    function blockMobileUsers() {
+        if (window.innerWidth < 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            document.open();
+            document.write('<h1>❌ Aktuell nicht auf Smartphones verfügbar!</h1><p>Bitte nutzen Sie einen PC-Browser.</p>');
+            document.close();
+        }
+    }
+    window.onload = blockMobileUsers;
+</script>
+
+
+
+
+
+
+
+
+
   <div class="cHead">
     <a href="#">
       <img src="images/Logo.png" class="cLogo" alt="Logo">
@@ -50,31 +71,6 @@
   <script src="js/header/header.js"></script>
 </header>
 <body>
-
-
-
-  <!--TEST gesperrt für Handy-->
-  <script>
-    function checkDevice() {
-        if (window.innerWidth < 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-            document.body.innerHTML = '<h1>❌ Aktuell noch nicht auf Smartphones verfügbar!</h1><p>Bitte öffnen Sie die Seite in einem Desktop-Browser.</p>';
-        }
-    }
-    window.onload = checkDevice;
-    window.onresize = checkDevice;
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="cBody"></div>
   <div class ="cFrame">
   <div class="cHoover">
