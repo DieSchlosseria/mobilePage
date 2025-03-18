@@ -50,6 +50,31 @@
   <script src="js/header/header.js"></script>
 </header>
 <body>
+
+
+
+  <!--TEST gesperrt für Handy-->
+  <script>
+    function checkDevice() {
+        if (window.innerWidth < 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            document.body.innerHTML = '<h1>❌ Aktuell noch nicht auf Smartphones verfügbar!</h1><p>Bitte öffnen Sie die Seite in einem Desktop-Browser.</p>';
+        }
+    }
+    window.onload = checkDevice;
+    window.onresize = checkDevice;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="cBody"></div>
   <div class ="cFrame">
   <div class="cHoover">
